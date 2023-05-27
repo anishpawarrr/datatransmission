@@ -35,11 +35,18 @@ def col3(i):
     #     time.sleep(2)
 
 # col1(1)
-_thread.start_new_thread(col1,(1,))
-_thread.start_new_thread(col3,(2,))
-_thread.start_new_thread(col3,(3,))
-time.sleep((5))
+# _thread.start_new_thread(col1,(1,))
+# _thread.start_new_thread(col3,(2,))
+# _thread.start_new_thread(col3,(3,))
+# p = input("enter to stop")
+wk.update_cell(7,1,1)
+
+while wk.cell(7,1).value == "1":
+    _thread.start_new_thread(col1, (1,))
+    _thread.start_new_thread(col3, (2,))
+    _thread.start_new_thread(col3, (3,))
+
+
 # col2(2)
 # col3(3)
 print("hhe")
-# wk.close()
