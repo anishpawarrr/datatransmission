@@ -49,4 +49,3 @@ while wk.cell(7,1).value == "1":
 
 # col2(2)
 # col3(3)
-print("hhe")
